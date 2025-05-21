@@ -93,32 +93,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h1><h2 id="ubuntu突然网络消失解决方法"><a href="#ubuntu突然网络消失解决方法" class="headerlink" title="ubuntu突然网络消失解决方法:"></a>ubuntu突然网络消失解决方法:</h2><h3 id="1-修改NetworkManager配置"><a href="#1-修改NetworkManager配置" class="headerlink" title="1.修改NetworkManager配置"></a>1.修改NetworkManager配置</h3><p>sudo vi &#x2F;etc&#x2F;NetworkManager&#x2F;NetworkManager.conf</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[ifupdown]</span><br><span class="line">managed=true   #将false改成true</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-删除原本配置，并重启服务"><a href="#2-删除原本配置，并重启服务" class="headerlink" title="2.删除原本配置，并重启服务"></a>2.删除原本配置，并重启服务</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo service NetworkManager stop</span><br><span class="line">sudo rm /var/lib/NetworkManager/NetworkManager.state</span><br><span class="line">sudo service NetworkManager start</span><br></pre></td></tr></table></figure>
-
-<h2 id="端口占用解决方法"><a href="#端口占用解决方法" class="headerlink" title="端口占用解决方法"></a>端口占用解决方法</h2><p>查询端口</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo lsof -i :5000</span><br></pre></td></tr></table></figure>
-
-<p>杀死</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill 端口id</span><br></pre></td></tr></table></figure>
-
-<h1 id="Webase"><a href="#Webase" class="headerlink" title="Webase"></a>Webase</h1><h3 id="停止后启动出现系统错误"><a href="#停止后启动出现系统错误" class="headerlink" title="停止后启动出现系统错误"></a>停止后启动出现系统错误</h3><p>目前方法:重启虚拟机</p>
-<h3 id="验证码无法查看"><a href="#验证码无法查看" class="headerlink" title="验证码无法查看:"></a>验证码无法查看:</h3><p>编辑文件webase-node-mgr&#x2F;conf里面的application.yml配置文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在url那栏最后边加上&amp;useSSL=false</span><br></pre></td></tr></table></figure>
-
-<h2 id="fisco配置控制台"><a href="#fisco配置控制台" class="headerlink" title="fisco配置控制台"></a>fisco配置控制台</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp -n ~/fisco/console/conf/config-example.toml ~/fisco/console/conf/config.toml</span><br><span class="line">cp -r ~/fisco/nodes/127.0.0.1/sdk/* ~/fisco/console/conf/</span><br></pre></td></tr></table></figure>
-
-<h2 id="可视化部署失败的一些原因"><a href="#可视化部署失败的一些原因" class="headerlink" title="可视化部署失败的一些原因"></a>可视化部署失败的一些原因</h2><p>1.虚拟机内存不足，增加内存即可完成。</p>
-<p>2.文件权限不足建议给满chmod 777 文件</p>
-<p>3.docker拉取hello-world失败手动拉取<code>docker pull hello-world</code></p>
-<h2 id="解决屏幕过小方法"><a href="#解决屏幕过小方法" class="headerlink" title="解决屏幕过小方法"></a>解决屏幕过小方法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xrandr -s  1920x1080</span><br></pre></td></tr></table></figure>
-
+        <h1 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h1>
+        
+          <p class="article-more-link">
+            <a href="/2025/05/21/ubantu-user/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/05/21/ubantu-user/" data-id="cmaxw8vbs000440vjgave0gjm" data-title="ubantu user" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/05/21/ubantu-user/" data-id="cmaxw9ju40004xwvj5q8cfurd" data-title="ubantu user" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -164,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/04/21/Second-Tournament-Experience/" data-id="cmaxw8vbp000140vj8qi5cf3w" data-title="Second Tournament Experience" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/04/21/Second-Tournament-Experience/" data-id="cmaxw9ju10001xwvjfdknczvq" data-title="Second Tournament Experience" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -206,7 +190,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/04/21/My-Second-learning-experience/" data-id="cmaxw8vbl000040vjdgcdc9g4" data-title="My Second learning experience" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/04/21/My-Second-learning-experience/" data-id="cmaxw9jty0000xwvj1wn208y2" data-title="My Second learning experience" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -252,7 +236,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/04/21/fitst-project-Development-content/" data-id="cmaxw8vbr000340vj8n7ifupo" data-title="fitst project Development content" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/04/21/fitst-project-Development-content/" data-id="cmaxw9ju30003xwvj81n3dv3e" data-title="fitst project Development content" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -296,7 +280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/04/21/fitst-project/" data-id="cmaxw8vbt000540vjfoynbfoq" data-title="fitst project" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/04/21/fitst-project/" data-id="cmaxw9ju40005xwvj29d7hyj7" data-title="fitst project" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -337,7 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/04/21/%E6%88%91%20%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" data-id="cmaxw8vbx000f40vj5lwzf133" data-title="我 的第一个博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/04/21/%E6%88%91%20%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" data-id="cmaxw9ju50008xwvjgfnhhiqr" data-title="我 的第一个博客" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

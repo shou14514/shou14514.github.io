@@ -6,15 +6,15 @@
   
   <title>ubantu user | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="ubuntuubuntu突然网络消失解决方法:1.修改NetworkManager配置sudo vi &#x2F;etc&#x2F;NetworkManager&#x2F;NetworkManager.conf 12[ifupdown]managed&#x3D;true   #将false改成true  2.删除原本配置，并重启服务123sudo service NetworkManager stopsud">
+  <meta name="description" content="ubuntu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubantu user">
 <meta property="og:url" content="http://example.com/2025/05/21/ubantu-user/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="ubuntuubuntu突然网络消失解决方法:1.修改NetworkManager配置sudo vi &#x2F;etc&#x2F;NetworkManager&#x2F;NetworkManager.conf 12[ifupdown]managed&#x3D;true   #将false改成true  2.删除原本配置，并重启服务123sudo service NetworkManager stopsud">
+<meta property="og:description" content="ubuntu">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-05-21T12:00:22.000Z">
-<meta property="article:modified_time" content="2025-05-21T12:00:57.520Z">
+<meta property="article:modified_time" content="2025-05-21T12:03:24.182Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="ubantu使用过程中的一些bug">
 <meta name="twitter:card" content="summary">
@@ -96,7 +96,9 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h1><h2 id="ubuntu突然网络消失解决方法"><a href="#ubuntu突然网络消失解决方法" class="headerlink" title="ubuntu突然网络消失解决方法:"></a>ubuntu突然网络消失解决方法:</h2><h3 id="1-修改NetworkManager配置"><a href="#1-修改NetworkManager配置" class="headerlink" title="1.修改NetworkManager配置"></a>1.修改NetworkManager配置</h3><p>sudo vi &#x2F;etc&#x2F;NetworkManager&#x2F;NetworkManager.conf</p>
+        <h1 id="ubuntu"><a href="#ubuntu" class="headerlink" title="ubuntu"></a>ubuntu</h1><span id="more"></span>
+
+<h2 id="ubuntu突然网络消失解决方法"><a href="#ubuntu突然网络消失解决方法" class="headerlink" title="ubuntu突然网络消失解决方法:"></a>ubuntu突然网络消失解决方法:</h2><h3 id="1-修改NetworkManager配置"><a href="#1-修改NetworkManager配置" class="headerlink" title="1.修改NetworkManager配置"></a>1.修改NetworkManager配置</h3><p>sudo vi &#x2F;etc&#x2F;NetworkManager&#x2F;NetworkManager.conf</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[ifupdown]</span><br><span class="line">managed=true   #将false改成true</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-删除原本配置，并重启服务"><a href="#2-删除原本配置，并重启服务" class="headerlink" title="2.删除原本配置，并重启服务"></a>2.删除原本配置，并重启服务</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo service NetworkManager stop</span><br><span class="line">sudo rm /var/lib/NetworkManager/NetworkManager.state</span><br><span class="line">sudo service NetworkManager start</span><br></pre></td></tr></table></figure>
@@ -121,7 +123,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/05/21/ubantu-user/" data-id="cmaxw8vbs000440vjgave0gjm" data-title="ubantu user" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/05/21/ubantu-user/" data-id="cmaxw9ju40004xwvj5q8cfurd" data-title="ubantu user" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
